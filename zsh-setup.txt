@@ -32,6 +32,19 @@ Copy the template .zshrc.zsh-template configuration file to the home directory .
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 source ~/.zshrc
 ---
+Change default themes
+The default .zshrc configuration that's provided by oh-my-zsh is using 'robbyrusell' theme. In this step, we will edit the configuration and change the default theme.
+
+The Oh-my-zsh framework provides many themes for your zsh shell, head to the link below to take a look at the available options.
+
+https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+
+Alternatively, you can go to the 'themes' directory and see the list of available themes.
+
+cd ~/.oh-my-zsh/themes/
+ls -a
+--------------
+
 
 
 
