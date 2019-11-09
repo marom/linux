@@ -1,0 +1,11 @@
+-----ZSH------
+
+apt install zsh
+
+After the installation is complete, change the default shell of the root user to zsh with the chsh command below.
+
+chsh -s /usr/bin/zsh root
+
+Now logout from the root user, log in again, and you will get the zsh shell.
+
+
