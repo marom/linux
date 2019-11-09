@@ -8,4 +8,14 @@ chsh -s /usr/bin/zsh root
 
 Now logout from the root user, log in again, and you will get the zsh shell.
 
+--IF NOT WORKING TRY---
+chsh -s $(which zsh)
+without sudo should work. If you use sudo it will change the shell not for your working user but for root
+
+Finally, log out of your computer and log back in.
+
+--
+
+
+
 
