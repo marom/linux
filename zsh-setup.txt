@@ -16,6 +16,15 @@ Finally, log out of your computer and log back in.
 
 --
 
+if wget or git are not installed
+
+apt install wget git
+
+Now download the installer script and execute it.
+
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+
+--
 
 
 
