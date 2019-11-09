@@ -44,6 +44,42 @@ Alternatively, you can go to the 'themes' directory and see the list of availabl
 cd ~/.oh-my-zsh/themes/
 ls -a
 --------------
+Oh-my-zsh offers awesome plugins. There are a lot of plugins for our environment, aimed at developers, system admins, and everyone else.
+
+Default plugins are in the 'plugins' directory.
+
+cd ~/.oh-my-zsh/plugins/
+ls -a
+vim ~/.zshrc
+
+and you can add predefined plugins here
+
+---------
+
+install LF tool:
+https://linoxide.com/linux-how-to/lf-terminal-manager-linux/
+
+add to zshrc configuration file, CTRL-O will run it
+# Use lf to switch directories and bind it to ctrl-o
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+bindkey -s '^o' 'lfcd\n'
+
+----
+add separate files for shortuts and aliases
+
+# Load aliases and shortcuts if existent.
+[ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
+[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+
+--
 
 
 
